@@ -15,11 +15,15 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        ViewBag.Message = this.HttpContext.Session.GetString("Alunos");
         return View();
     }
 
     public IActionResult Privacy()
     {
+        this.HttpContext.Session.SetString("Alunos","Torne-se um Programador");
+
+
         return View();
     }
 

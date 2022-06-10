@@ -6,6 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
    
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+    builder.Services.AddSession();
                   
     JToken jAppSettings = JToken.Parse(File.ReadAllText(Path.Combine(Environment.CurrentDirectory, "appsettings.json")));
            builder.Services.AddDbContext<ContextoCms>(options => options.UseSqlServer(jAppSettings["ConexaoSql"].ToString()));
@@ -21,7 +23,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-
+app.UseSession();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
