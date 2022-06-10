@@ -1,7 +1,15 @@
-var builder = WebApplication.CreateBuilder(args);
+using admin_cms.Infraestrutura.Database;
+using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json.Linq;
 
+var builder = WebApplication.CreateBuilder(args);
+   
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+                  
+    JToken jAppSettings = JToken.Parse(File.ReadAllText(Path.Combine(Environment.CurrentDirectory, "appsettings.json")));
+           builder.Services.AddDbContext<ContextoCms>(options => options.UseSqlServer(jAppSettings["ConexaoSql"].ToString()));
+
 
 var app = builder.Build();
 
@@ -12,6 +20,8 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
