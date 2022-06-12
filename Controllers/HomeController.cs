@@ -21,7 +21,13 @@ public class HomeController : Controller
 
     public IActionResult Privacy()
     {
-        this.HttpContext.Session.SetString("Alunos","Torne-se um Programador");
+        this.HttpContext.Response.Cookies.Append("Alunos","Torne-se um Programador", new CookieOptions
+        {
+            Expires = DateTimeOffset.UtcNow.AddSeconds(3),
+            HttpOnly = true,
+        });
+
+     //   this.HttpContext.Session.SetString("Alunos","Torne-se um Programador");
 
 
         return View();
