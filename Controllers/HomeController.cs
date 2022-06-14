@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using admin_cms.Models;
+using admin_cms.Models.Infraestrutura.Autenticacao;
 
 namespace admin_cms.Controllers;
 
@@ -12,20 +13,20 @@ public class HomeController : Controller
     {
         _logger = logger;
     }
-
+    [Logado]
     public IActionResult Index()
     {
-        ViewBag.Message = this.HttpContext.Session.GetString("Alunos");
+        //ViewBag.Message = this.HttpContext.Session.GetString("Alunos");
         return View();
     }
 
     public IActionResult Privacy()
     {
-        this.HttpContext.Response.Cookies.Append("Alunos","Torne-se um Programador", new CookieOptions
-        {
-            Expires = DateTimeOffset.UtcNow.AddSeconds(3),
-            HttpOnly = true,
-        });
+       // this.HttpContext.Response.Cookies.Append("Alunos","Torne-se um Programador", new CookieOptions
+       //{
+       //    Expires = DateTimeOffset.UtcNow.AddSeconds(3),
+       //     HttpOnly = true,
+       // });
 
      //   this.HttpContext.Session.SetString("Alunos","Torne-se um Programador");
 
