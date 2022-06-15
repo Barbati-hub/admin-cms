@@ -34,6 +34,15 @@ public class HomeController : Controller
         return View();
     }
 
+
+    public IActionResult Sair()
+    {
+         this.HttpContext.Response.Cookies.Delete("adm_cms");
+      
+
+        return Redirect("/login");
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
