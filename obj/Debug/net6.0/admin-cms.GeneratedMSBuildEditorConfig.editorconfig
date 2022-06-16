@@ -47,6 +47,30 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/douglas/Curso/admin-cms/Views/Paginas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFnaW5hcy9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/douglas/Curso/admin-cms/Views/Paginas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFnaW5hcy9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/douglas/Curso/admin-cms/Views/Paginas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFnaW5hcy9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/douglas/Curso/admin-cms/Views/Paginas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFnaW5hcy9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/douglas/Curso/admin-cms/Views/Paginas/Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFnaW5hcy9Gb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/douglas/Curso/admin-cms/Views/Paginas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFnaW5hcy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/douglas/Curso/admin-cms/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

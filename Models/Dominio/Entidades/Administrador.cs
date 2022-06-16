@@ -12,19 +12,19 @@ namespace admin_cms.Models.Dominio.Entidades
 
         [Required]
         [MaxLength(100)]
-        public string Nome {get;set;}
+        public string? Nome {get;set;}
 
         [Required]
         [MaxLength(15)]
-        public string Telefone {get; set;}
+        public string? Telefone {get; set;}
 
         [Required]
         [MaxLength(100)]
-        public string Email {get; set;}
+        public string? Email {get; set;}
 
         [Required]
         [MaxLength(20)]
-        public string Senha {get; set;}        
+        public string? Senha {get; set;}        
 
 
     }

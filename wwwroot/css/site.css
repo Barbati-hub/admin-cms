@@ -17,12 +17,19 @@ body {
   margin-bottom: 60px;
 }
 
+}
+.footer {
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60%; /* Vertically center the text there */
+}
+
 
 /* BASIC */   /* TELA DE LOGIN */
 
-html {
+/*html {
   background-color: #56baed;
-}
+}*/
 
 body {
   font-family: "Poppins", sans-serif;
