@@ -31,6 +31,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5pc3RyYWRvcmVzL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/douglas/Curso/admin-cms/Views/Administradores/FormAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5pc3RyYWRvcmVzL0Zvcm1BZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/douglas/Curso/admin-cms/Views/Administradores/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5pc3RyYWRvcmVzL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
