@@ -15,3 +15,5 @@ dotnet ef migrations add EstruturaInicial
 dotnet ef database update
 dotnet aspnet-codegenerator controller -name AdministradoresController -m Administrador -dc ContextoCms --relativeFolderPath Controllers --useDefaultLayout
 dotnet aspnet-codegenerator controller -name PaginasController -m Pagina -dc ContextoCms --relativeFolderPath Controllers --useDefaultLayout
+
+dotnet aspnet-codegenerator controller -name MenuCarpadiosController -m MenuCarpadio -dc ContextoCms --relativeFolderPath Controllers --useDefaultLayout
